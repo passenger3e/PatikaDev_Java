@@ -18,15 +18,16 @@ public class P02_TaxAmount {
         Scanner getMoney=new Scanner(System.in);
         double sumOfMoney;
         double taxAmount;
-        double taxPercentage=(18.0/100);
+        double taxPercentage1=(18.0/100);
+        double taxPercentage2=(8.0/100);
         System.out.println("|Description                    | Amount |");
         System.out.println("------------------------------------------");
-
         System.out.print("Please enter the Amount:         ");
         sumOfMoney=getMoney.nextDouble();
+        double taxPercentage=(sumOfMoney>0&&sumOfMoney<=1000? taxPercentage1:taxPercentage2);
         System.out.println("------------------------------------------");
         taxAmount=sumOfMoney*taxPercentage;
-        System.out.println("Amount without tax is:           " +taxPercentage);
+        System.out.println("Amount without tax is:           " +taxAmount);
         System.out.println("------------------------------------------");
         System.out.println("Tax Amount is:                   " +taxAmount +
                 "\n------------------------------------------\nAnd Total Amount with tax is:    "+(taxAmount+sumOfMoney));
