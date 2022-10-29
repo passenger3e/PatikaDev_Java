@@ -34,8 +34,8 @@ public class CalculatorWithSCase {
                 System.out.println("Result is: " + total);
                 break;
             case 4:
-                total = firstNumber / secondNumber;
-                System.out.println("Result is: " + total);
+
+                System.out.println((firstNumber==0?"You cant divide 0 to a number":("Result is: " + (firstNumber / secondNumber))));
                 break;
             default:
                 System.out.println("You have to chose one fo the operator 1,2,3 or 4 to make calculation");
