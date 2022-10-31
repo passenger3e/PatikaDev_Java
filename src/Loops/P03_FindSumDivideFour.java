@@ -2,7 +2,7 @@ package Loops;
 
 import java.util.Scanner;
 
-public class P03_FindAverage {
+public class P03_FindSumDivideFour {
     public static void main(String[] args) {
         /*
         ask for number continuously until user enters odd number
