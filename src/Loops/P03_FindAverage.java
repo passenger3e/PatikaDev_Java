@@ -1,0 +1,37 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class P03_FindAverage {
+    public static void main(String[] args) {
+        /*
+        ask for number continuously until user enters negative number
+        Find sum of the numbers that are even and be able to divided to 4 and print the these numbers.
+        This homework gives wrong expression and decided to take assignment as finding only numbers able to be divided to 4
+         */
+        Scanner getNumber=new Scanner(System.in);
+        int number,count=0;
+        double total=0;
+        boolean checkNegative=false;
+        while(!checkNegative){
+            System.out.print("Please enter number that look for even and multiple of 4 numbers\n(enter negatve number to exit the applicaiton): ");
+
+            if(getNumber.hasNextInt()){
+                number=getNumber.nextInt();
+                if(number<0){
+                    checkNegative=true;
+                    break;
+                }
+                else if(number%4==0){
+                    count++;
+                    total+=number;
+                }
+            }
+            else{
+                System.out.println("Please enter an Integer number");
+            }
+        }
+        System.out.println("Sum of "+count+" numbers is: "+total);
+
+    }
+}
