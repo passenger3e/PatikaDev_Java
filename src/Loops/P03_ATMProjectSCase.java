@@ -58,6 +58,12 @@ public class P03_ATMProjectSCase {
                             System.out.println("Your Balance is:  "+u_Balance);
                             break;
                         }
+                        case 4: {
+                            System.out.println("You are Logging out...");
+                            break;
+                        }
+                        default:
+                            System.out.println("Unexpected Option");
 
                     }
 
@@ -66,10 +72,13 @@ public class P03_ATMProjectSCase {
                 break;
             }
             else{
-                System.out.println("Entered User Name or Password is Wrong.\nPlease enter again!:");
+                System.out.println("Entered User Name or Password is Wrong");
                 rigth--;
                 if(rigth==0){
                     System.out.println("You entered your credentials wrong 3 times. your account has been blocked.\nPlease Contact With the Bank.");
+                }
+                else{
+                    System.out.println("You have "+rigth+" right left!");
                 }
             }
 
