@@ -41,6 +41,7 @@ public class P03_ATMProjectSCase {
                             System.out.print("Amount of Cash: ");
                             money = infoUser.nextInt();
                             u_Balance += money;
+                            System.out.println("Your new balance is: "+u_Balance);
                             break;
                         }
                             case 2: {
