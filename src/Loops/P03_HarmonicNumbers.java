@@ -14,6 +14,6 @@ public class P03_HarmonicNumbers {
         for(i=1;i<=value;i++){
             total+=1f/i;
         }
-        System.out.println(value+". Harmonic value of the entered number is: "+total);
+        System.out.println(value+". harmonic number of the entered number is: "+total);
     }
 }
