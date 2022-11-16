@@ -22,8 +22,8 @@ public class P03_MinMax {
             i++;
 
         }
-        System.out.println("Minimum value is: "+minValue);
-        System.out.println("Maximum value is: "+maxValue);
+        System.out.println("Smallest value is: "+minValue);
+        System.out.println("Largest value is: "+maxValue);
 
     }
 }
