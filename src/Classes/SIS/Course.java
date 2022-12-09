@@ -16,7 +16,7 @@ public class Course {
 
 
     }
-    public void addTeacher(Teacher t){ //Adding a teacher to related branch
+     void addTeacher(Teacher t){ //Adding a teacher to related branch
         if(this.prefix.equals(t.branch)){
             this.teacher=t;
             System.out.println("Teacher Successfully added");
@@ -24,7 +24,7 @@ public class Course {
         else
             System.out.println("This Teacher can't be added!.");
     }
-    public void printTeacher(){ //will print the teacher info related to the branch
+     void printTeacher(){ //will print the teacher info related to the branch
         if(teacher!=null){
             System.out.println(this.name+" class teacher: "+teacher.name);
         }
