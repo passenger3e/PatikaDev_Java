@@ -1,4 +1,4 @@
-package Arrays.Entrance;
+package Arrays.Intro;
 public class IntroToArrays {
     public static void main(String[] args) {
         int array[]= new int[]{1, 2, 3, 4, 5};// array can be declared like this
