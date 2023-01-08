@@ -4,6 +4,8 @@ public class OneDimensionArray {
     public static void main(String[] args) {
         //double[] list={1,3,3,3,};
         double[] list=new double[5];
+        int arr[],count=5;
+        arr= new int[count];
         list[4]=5;
         list[1]=81;
         list[0]=0;
